@@ -70,6 +70,7 @@
     <Compile Include="Assets\Scenes\RunAndJump\GameController.cs" />
     <Compile Include="Assets\Scenes\RunAndJump\InputController.cs" />
     <Compile Include="Assets\Scenes\RunAndJump\JumpPad.cs" />
+    <Compile Include="Assets\Scenes\RunAndJump\MidJump.cs" />
     <Compile Include="Assets\Scenes\RunAndJump\Platform.cs" />
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>D:/HighgateStudios/Git/Clients/RapidPrototypes/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>

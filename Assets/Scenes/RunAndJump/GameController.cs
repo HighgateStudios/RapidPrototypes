@@ -22,6 +22,14 @@ public class GameController : MonoBehaviour
 
     }
 
+    public void SwapGravity()
+    {
+        var dir = Physics.gravity.y;
+        Physics.gravity = new Vector3(0, dir * -1, 0);
+
+        Debug.Log(Physics.gravity);
+    }
+
     public void SetPlatform(GameObject platform)
     {
         _CurrentPlatform = platform;

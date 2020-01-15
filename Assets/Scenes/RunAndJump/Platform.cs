@@ -2,6 +2,8 @@
 
 public class Platform : MonoBehaviour
 {
+    public GameObject Creator;
+
     private GameController _gameController;
 
     public GameObject PlatformPrefab;
@@ -15,6 +17,10 @@ public class Platform : MonoBehaviour
 
     void OnCollisionEnter(Collision collision)
     {
+        if (Creator != null)
+        {
+            Destroy(Creator);
+        }
         // ball landed on us
         SpawnAnotherPlatform();
     }
@@ -38,11 +44,13 @@ public class Platform : MonoBehaviour
 
         var pos = JumpPad.transform.position.z;
 
-        inst.transform.position = new Vector3(0, 0, pos + 120);
+        inst.transform.position = new Vector3(0, 0, pos + 80);
 
         var rotation = Random.Range(0, 359);
 
         var platformComponent = inst.GetComponentInChildren<Platform>();
+
+        platformComponent.Creator = gameObject.transform.parent.gameObject;
 
         platformComponent.SetSize(transform.localScale.x * 0.8f, transform.localScale.z * 0.8f, rotation);
     }

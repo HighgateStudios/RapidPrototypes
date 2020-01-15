@@ -4,5 +4,8 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/RunAndJump/RunAndJump.unity
+    guid: 32223ab50f4fe974bb0f5032c7c8555f
   m_configObjects: {}

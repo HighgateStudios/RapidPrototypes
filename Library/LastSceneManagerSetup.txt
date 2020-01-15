@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Scenes/PipeRotator.unity
+- path: Assets/Scenes/RunAndJump/RunAndJump.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0

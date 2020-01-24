@@ -65,7 +65,6 @@
   <ItemGroup>
     <Compile Include="Assets\CameraMover.cs" />
     <Compile Include="Assets\PlayerController.cs" />
-    <Compile Include="Assets\Scenes\RunAndJump\Ball.cs" />
     <Compile Include="Assets\Scenes\RunAndJump\FocalPoint.cs" />
     <Compile Include="Assets\Scenes\RunAndJump\GameController.cs" />
     <Compile Include="Assets\Scenes\RunAndJump\InputController.cs" />

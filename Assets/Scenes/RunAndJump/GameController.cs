@@ -1,6 +1,7 @@
 ﻿using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices.WindowsRuntime;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameController : MonoBehaviour
 {
@@ -46,9 +47,15 @@ public class GameController : MonoBehaviour
 
     void Update()
     {
-        if (Ball.transform.position.y < -100f)
+        if (Ball.transform.position.y < -50f)
+        {
+            SceneManager.LoadScene("RunAndJump");
+        }
+
+        if (Input.GetKeyUp(KeyCode.Escape))
         {
             Application.Quit();
         }
+
     }
 }

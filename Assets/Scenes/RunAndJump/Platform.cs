@@ -44,7 +44,7 @@ public class Platform : MonoBehaviour
 
         var pos = JumpPad.transform.position.z;
 
-        inst.transform.position = new Vector3(0, 0, pos + 80);
+        inst.transform.position = new Vector3(0, 0, pos + 100);
 
         var rotation = Random.Range(0, 359);
 
